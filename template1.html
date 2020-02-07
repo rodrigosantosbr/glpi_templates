@@ -1,0 +1,224 @@
+Olá Sr(a) ##ticket.openbyuser##,<br />
+
+##IFticket.storestatus=new##
+<p>
+O seu pedido de ajuda feito no sistema de Helpdesk foi recebido.
+A nossa equipe já esta processando a solicitação e entrará em contato.
+Você também poderá acessar o link <a href=”##ticket.url##”>##ticket.url##</a> para acompanhar o status do seu chamado.
+<p/>
+
+##ENDIFticket.storestatus##
+
+O seu numero de referência do seu chamado é [##ticket.id##].
+
+<br>
+Este é um email gerado automaticamente pelo sistema de Helpdesk.
+POR FAVOR NÃO RESPONDA ESTE EMAIL.
+<br />
+
+##IFticket.storestatus=solved##
+    <table style=”width: 100%;” border=”0″>
+        <tbody>
+            <tr>
+                <th style=”width: 100%; background-color: #189bcc;” colspan=”2″ rowspan=”1″><a href=”##ticket.urlapprove##”>##lang.ticket.solution.description##</a></th>
+            </tr>
+            <tr align=”center”>
+                <td colspan=”2″ rowspan=”1″><br>
+                    <strong>##lang.ticket.autoclosewarning##</strong>
+                </td>
+            </tr>
+            <tr>
+                <td style=”text-align: left; vertical-align: middle;”><br>
+                    ##lang.ticket.solvedate## :
+                </td>
+                <td style=”text-align: left; vertical-align: middle;”><br>
+                    ##ticket.solvedate##
+                </td>
+            </tr>
+            <tr>
+                <td style=”text-align: left; vertical-align: middle;”><br>
+                    ##lang.ticket.solution.type## :
+                </td>
+                <td style=”text-align: left; vertical-align: middle;”><br>
+                    ##ticket.solution.type##
+                </td>
+            </tr>
+            <tr>
+                <td style=”text-align: left; vertical-align: middle;”><br>
+                    ##lang.ticket.solution.description## :
+                </td>
+                <td style=”text-align: left; vertical-align: middle;”><br>
+                    ##ticket.solution.description##
+                </td>
+            </tr>
+        </tbody>
+    </table>
+##ENDIFticket.storestatus##
+
+<br />
+
+<table style=”width: 1400px; height: 43px; background-color: #189bcc;” border=”0″>
+    <tbody>
+        <tr>
+            <td style=”width: 695px; text-align: center;”><br>
+                <a href=”##ticket.url##”>##ticket.title##</a>
+            </td>
+            <td style=”margin-left: 154px; text-align: center;”><br>
+                ##IFticket.numberoffollowups##
+                    <a href=”#followups”>##lang.ticket.numberoffollowups## : ##ticket.numberoffollowups##</a>
+                ##ENDIFticket.numberoffollowups##
+            </td>
+            <td style=”text-align: center;”><br>
+                ##IFticket.numberoftasks##
+                    <a href=”#tasks”>##lang.ticket.numberoftasks## : ##ticket.numberoftasks##</a>
+                ##ENDIFticket.numberoftasks##
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table style=”width: 704px; height: 329px;” border=”0″>
+<tbody>
+<tr>
+    <td style=”text-align: left; vertical-align: middle;”><br>
+        ##lang.ticket.authors## :
+    </td>
+    <td style=”text-align: left; vertical-align: middle;”><br>
+        ##IFticket.authors##
+            ##ticket.authors##
+        ##ENDIFticket.authors##
+        ##ELSEticket.authors##
+            —
+        ##ENDELSEticket.authors##
+    </td>
+</tr>
+<tr>
+    <td style=”text-align: left; vertical-align: middle;”><br>
+        ##lang.ticket.creationdate## :
+    </td>
+    <td style=”text-align: left; vertical-align: middle;”><br>
+        ##ticket.creationdate##
+    </td>
+</tr>
+<tr>
+    <td style=”text-align: left; vertical-align: middle;”><br>
+        ##lang.ticket.closedate## :
+    </td>
+    <td style=”text-align: left; vertical-align: middle;”><br>
+        ##ticket.closedate##
+    </td>
+</tr>
+##IFticket.requesttype##
+    <tr>
+        <td style=”text-align: left; vertical-align: middle;”><br>
+            ##lang.ticket.requesttype## :
+
+        </td>
+        <td style=”text-align: left; vertical-align: middle;”><br>
+            ##ticket.requesttype##
+        </td>
+    </tr>
+##ENDIFticket.requesttype##
+##IFticket.itemtype##
+    <tr>
+        <td style=”text-align: left; vertical-align: middle;”><br>
+            ##lang.ticket.item.name## :
+        </td>
+        <td style=”text-align: left; vertical-align: middle;”><br>
+            ##ticket.itemtype## – ##ticket.item.name##  ##IFticket.item.model## – ##ticket.item.model## ##ENDIFticket.item.model##  ##IFticket.item.serial## – ##ticket.item.serial## ##ENDIFticket.item.serial##   ##IFticket.item.otherserial## – ##ticket.item.otherserial## ##ENDIFticket.item.otherserial##
+
+        </td>
+    </tr>
+##ENDIFticket.itemtype##
+##IFticket.assigntousers##
+    <tr>
+        <td style=”text-align: left; vertical-align: middle;”><br>
+            ##lang.ticket.assigntousers## :
+        </td>
+        <td style=”text-align: left; vertical-align: middle;”><br>
+            ##ticket.assigntousers##
+        </td>
+
+    </tr>
+##ENDIFticket.assigntousers##
+<tr>
+    <td style=”text-align: left; vertical-align: middle;”><br>
+        ##lang.ticket.status## :
+    </td>
+    <td style=”text-align: left; vertical-align: middle;”><br>
+        ##ticket.status##
+    </td>
+</tr>
+##IFticket.assigntogroups##
+    <tr>
+        <td style=”text-align: left; vertical-align: middle;”><br>
+            ##lang.ticket.assigntogroups## :
+        </td>
+        <td style=”text-align: left; vertical-align: middle;”><br>
+            ##ticket.assigntogroups##
+        </td>
+    </tr>
+##ENDIFticket.assigntogroups##
+<tr>
+    <td style=”text-align: left; vertical-align: middle;”><br>
+        ##lang.ticket.urgency## :
+    </td>
+    <td style=”text-align: left; vertical-align: middle;”><br>
+        ##ticket.urgency##
+    </td>
+</tr>
+<tr>
+    <td style=”text-align: left; vertical-align: middle;”><br>
+        ##lang.ticket.impact## :
+    </td>
+    <td style=”text-align: left; vertical-align: middle;”><br>
+        ##ticket.impact##
+    </td>
+</tr>
+<tr>
+    <td style=”text-align: left; vertical-align: middle;”><br>
+        ##lang.ticket.category## :
+    </td>
+    <td style=”text-align: left; vertical-align: middle;”><br>
+        ##IFticket.category## ##ticket.category##  ##ENDIFticket.category##  ##ELSEticket.category##  ##lang.ticket.nocategoryassigned##  ##ENDELSEticket.category##
+    </td>
+</tr>
+<tr>
+    <td style=”text-align: left; vertical-align: middle;”><br>
+        ##lang.ticket.content## :
+    </td>
+    <td style=”text-align: left; vertical-align: middle;”><br>
+        ##ticket.content##
+    </td>
+</tr>
+##IFticket.storestatus=closed##
+<tr>
+    <td style=”text-align: left; vertical-align: middle;”><br>
+        ##lang.ticket.solvedate## :
+    </td>
+    <td style=”text-align: left; vertical-align: middle;”><br>
+        ##ticket.solvedate##
+    </td>
+</tr>
+<tr>
+    <td style=”text-align: left; vertical-align: middle;”><br>
+        ##lang.ticket.solution.type## :
+    </td>
+    <td style=”text-align: left; vertical-align: middle;”><br>
+        ##ticket.solution.type##
+    </td>
+</tr>
+<tr>
+    <td style=”text-align: left; vertical-align: middle;”><br>
+        ##lang.ticket.solution.description## :
+    </td>
+    <td style=”text-align: left; vertical-align: middle;”><br>
+        ##ticket.solution.description##
+    </td>
+</tr>
+
+##ticket.numberoffollowups##
+
+</tbody>
+
+</table>
